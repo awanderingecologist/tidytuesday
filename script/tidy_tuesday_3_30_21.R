@@ -35,6 +35,6 @@ ggplot(data=allNumbers, aes(x=lightness, group=brand, fill=hex)) +
     panel.spacing = unit(0.1, "lines"),
     axis.ticks.x=element_blank()
   )+
-  labs(title = 'The average lightness of various makeup brands', subtitle = 'Closer to zero is darker, closer to one is lighter')
-
+  labs(title = 'The average lightness of various makeup brands', subtitle = 'Closer to zero is darker, closer to one is lighter')+
+  ggsave(here("output","makeup.JPEG"))
 

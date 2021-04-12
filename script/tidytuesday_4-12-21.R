@@ -48,7 +48,8 @@ ggplot(forest1, aes(year, net_forest_conversion, label= entity, color= entity)) 
   xlab("Year")+
   labs(caption = "Positive forest coversion suggestions forest expansion, 
        though data is incomplete for USA")+
-  theme(legend.title = element_blank())
+  theme(legend.title = element_blank())+
+  ggsave(here("output","forests.jpeg"))
 
 
 

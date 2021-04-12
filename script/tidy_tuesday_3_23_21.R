@@ -72,6 +72,7 @@ plt <- ggplot(df) +
 unplot<-image_read("plt.png")
 img<- c(unplot, un)
 img<-image_scale(img)
-out <- image_composite(unplot, un, offset = "+600+400")
+out <- image_composite(unplot, un, offset = "+600+400")+
+  ggsave(here("output","un_votes.JPEG"))
 out
     
